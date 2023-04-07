@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap");
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.movie-card {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+.movie-card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.search-container {
+  margin: 20px auto;
+}
+
+.pagination-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #ccc;
+}
+
+button.active {
+  background-color: black;
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .movie-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .movie-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.loader-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.search-container {
+  display: grid;
+  text-align: center;
+}
+
+.search-container label {
+  font-family: monospace;
+  color: crimson;
+  font-weight: 900;
+  font-size: 35px;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+.search-container label:hover {
+  color: red;
+  -webkit-transition: 0.8s all;
+  transition: 0.8s all;
+}
+
+#search {
+  padding: 10px 25px;
+  border: 2px solid crimson;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 5px 1px red;
+          box-shadow: 0 0 5px 1px red;
+}
+
+#search:hover {
+  padding: 12px 30px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  border-color: red;
+  -webkit-box-shadow: 0 0 10px 2px red;
+          box-shadow: 0 0 10px 2px red;
+  outline: none;
+}
+
+#searchBtn {
+  padding: 5px 10px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  color: #000;
+  border-color: crimson;
+}
+
+#searchBtn:hover {
+  padding: 7px 13px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #fff;
+  background-color: crimson;
+  -webkit-box-shadow: 0 0 8px 2px crimson;
+          box-shadow: 0 0 8px 2px crimson;
+  border-color: crimson;
+}/*# sourceMappingURL=main.css.map */
+
+
+
+
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #eee;
+  padding: 20px;
+  display: flex;
+}
+.con{
+  display: flex;
+}
+main {
+  padding: 20px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode header {
+  background-color: #222;
+}
+
+.dark-mode span {
+  /* background-color: #fff; */
+  color: #333;
+}
+
+.con{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.left__block h1{
+  font-family: monospace;
+}
